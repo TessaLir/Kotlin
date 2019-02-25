@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kotlin_inroi_home</string>
+    <string name="main_text">Hello World!</string>
+    <string name="main_button_text">Click</string>
+</resources>
