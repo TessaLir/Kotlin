@@ -2,4 +2,5 @@
 <resources>
     <dimen name="std_margin">8dp</dimen>
     <dimen name="margin_all">4dp</dimen>
+    <dimen name="item_image_height_size">150dp</dimen>
 </resources>
