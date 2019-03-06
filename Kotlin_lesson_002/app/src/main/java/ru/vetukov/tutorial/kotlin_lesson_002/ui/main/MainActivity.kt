@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
 
-//        main_rv_notes.layoutManager = GridLayoutManager(this, 1)
-        main_rv_notes.layoutManager = LinearLayoutManager(this, 0, false)
+        main_rv_notes.layoutManager = GridLayoutManager(this, 1)
+//        main_rv_notes.layoutManager = LinearLayoutManager(this, 0, false)
         adapter = NotesRVAdapter()
         main_rv_notes.adapter = adapter
 

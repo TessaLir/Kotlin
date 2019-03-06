@@ -35,12 +35,12 @@ class NotesRVAdapter: RecyclerView.Adapter<NotesRVAdapter.ViewHolder>() {
             item_tv_title.text = note.title
             item_tv_text.text = note.text
             itemView.setBackgroundColor(note.color)
-            Picasso
-                .with(this.context)
-                .load(note.picture)
-                .fit()
-                .centerCrop()
-                .into(item_picture)
+//            Picasso
+//                .with(this.context)
+//                .load(note.picture)
+//                .fit()
+//                .centerCrop()
+//                .into(item_picture)
         }
     }
 }
