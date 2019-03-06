@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/main.button.submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddint_button_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/main.text"
+            android:text="@string/main_button_click_text"
+    />
+
+    <TextView
+            android:id="@+id/main.text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_text_size"
+            android:layout_centerInParent="true"
+    />
+
+</RelativeLayout>

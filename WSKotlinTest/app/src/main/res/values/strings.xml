@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WSKotlinTest</string>
+    <string name="main_button_click_text">Click!</string>
+</resources>
