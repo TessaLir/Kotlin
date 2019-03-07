@@ -3,4 +3,8 @@
     <string name="tools_items_title">Very important note</string>
     <string name="tools_items_text">Vety important note text with very important information</string>
     <string name="application_title">Notes App</string>
+    <string name="note_button_text">Notes App</string>
+    <string name="note_hint_edit_text">Заголовок</string>
+    <string name="note_hint_edittext_too">Текст заметки</string>
+    <string name="new_note">Новая заметка</string>
 </resources>
