@@ -16,6 +16,7 @@
                 android:id="@+id/main.toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|enterAlways"
                 app:title="@string/application_title"/>
 
 
