@@ -46,11 +46,12 @@ class NoteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
 
+        note = intent.getParcelableExtra(EXTRA_NOTE)
+        setSupportActionBar(note_toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         viewModel = ViewModelProviders.of(this).get(NoteViewModel::class.java)
 
-        note = intent.getParcelableExtra(EXTRA_NOTE)
 
         supportActionBar?.title = if (note != null) {
             SimpleDateFormat(DATE_FORMAT, Locale.getDefault()).format(note!!.lastChanged)
