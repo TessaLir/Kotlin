@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Window
 import kotlinx.android.synthetic.main.activity_main.*
 import ru.vetukov.tutorial.kotlin_lesson_002.R
+import ru.vetukov.tutorial.kotlin_lesson_002.ui.note.NoteActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,11 +26,19 @@ class MainActivity : AppCompatActivity() {
 
         main_rv_notes.layoutManager = GridLayoutManager(this, 1)
 //        main_rv_notes.layoutManager = LinearLayoutManager(this, 0, false)
-        adapter = NotesRVAdapter()
+        adapter = NotesRVAdapter{
+            NoteActivity.start(this, it)
+        }
         main_rv_notes.adapter = adapter
 
-        viewModel.viewState().observe(this, Observer { t ->
-            t?.let { adapter.notes = it.notes }
+        viewModel.viewState().observe(this, Observer<MainViewState> { state ->
+            state?.let {
+                adapter.notes = it.notes
+            }
         })
+
+        fab.setOnClickListener {
+            NoteActivity.start(this)
+        }
     }
 }
